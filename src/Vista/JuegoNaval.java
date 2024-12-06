@@ -15,10 +15,10 @@ public class JuegoNaval extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblBatallaNaval = new javax.swing.JLabel();
+        lblmisiles = new javax.swing.JLabel();
         MisilesCon = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        lblBarcosDerrivados = new javax.swing.JLabel();
         BarcosCon = new javax.swing.JLabel();
         pap = new javax.swing.JPanel();
         btn00 = new javax.swing.JButton();
@@ -78,18 +78,18 @@ public class JuegoNaval extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
-        jLabel1.setFont(new java.awt.Font("Tw Cen MT", 0, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Batalla Naval");
+        lblBatallaNaval.setFont(new java.awt.Font("Tw Cen MT", 0, 36)); // NOI18N
+        lblBatallaNaval.setForeground(new java.awt.Color(255, 255, 255));
+        lblBatallaNaval.setText("Batalla Naval");
 
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Misiles");
+        lblmisiles.setForeground(new java.awt.Color(255, 255, 255));
+        lblmisiles.setText("Misiles");
 
         MisilesCon.setForeground(new java.awt.Color(255, 255, 255));
         MisilesCon.setText("35");
 
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("barcos derrivados");
+        lblBarcosDerrivados.setForeground(new java.awt.Color(255, 255, 255));
+        lblBarcosDerrivados.setText("barcos derrivados");
 
         BarcosCon.setForeground(new java.awt.Color(255, 255, 255));
         BarcosCon.setText("0");
@@ -520,9 +520,9 @@ public class JuegoNaval extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(19, 19, 19)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblBarcosDerrivados, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblmisiles, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(33, 33, 33)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -532,7 +532,7 @@ public class JuegoNaval extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(38, 38, 38)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(lblBatallaNaval, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(pap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -544,7 +544,7 @@ public class JuegoNaval extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(lblBatallaNaval)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -555,11 +555,11 @@ public class JuegoNaval extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(38, 38, 38)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(lblmisiles)
                     .addComponent(MisilesCon))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
+                    .addComponent(lblBarcosDerrivados)
                     .addComponent(BarcosCon))
                 .addContainerGap())
         );
@@ -846,9 +846,9 @@ public class JuegoNaval extends javax.swing.JFrame {
     private javax.swing.JButton btn64;
     private javax.swing.JButton btn65;
     private javax.swing.JButton btn66;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel lblBatallaNaval;
+    private javax.swing.JLabel lblmisiles;
+    private javax.swing.JLabel lblBarcosDerrivados;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel monte;
