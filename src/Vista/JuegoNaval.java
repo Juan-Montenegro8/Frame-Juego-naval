@@ -17,9 +17,9 @@ public class JuegoNaval extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lblBatallaNaval = new javax.swing.JLabel();
         lblmisiles = new javax.swing.JLabel();
-        MisilesCon = new javax.swing.JLabel();
+        lblMisilesCon = new javax.swing.JLabel();
         lblBarcosDerrivados = new javax.swing.JLabel();
-        BarcosCon = new javax.swing.JLabel();
+        lblBarcosCon = new javax.swing.JLabel();
         pap = new javax.swing.JPanel();
         btn00 = new javax.swing.JButton();
         btn01 = new javax.swing.JButton();
@@ -71,7 +71,7 @@ public class JuegoNaval extends javax.swing.JFrame {
         btn65 = new javax.swing.JButton();
         btn66 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        monte = new javax.swing.JLabel();
+        lblmonte = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
@@ -85,14 +85,14 @@ public class JuegoNaval extends javax.swing.JFrame {
         lblmisiles.setForeground(new java.awt.Color(255, 255, 255));
         lblmisiles.setText("Misiles");
 
-        MisilesCon.setForeground(new java.awt.Color(255, 255, 255));
-        MisilesCon.setText("35");
+        lblMisilesCon.setForeground(new java.awt.Color(255, 255, 255));
+        lblMisilesCon.setText("35");
 
         lblBarcosDerrivados.setForeground(new java.awt.Color(255, 255, 255));
         lblBarcosDerrivados.setText("barcos derrivados");
 
-        BarcosCon.setForeground(new java.awt.Color(255, 255, 255));
-        BarcosCon.setText("0");
+        lblBarcosCon.setForeground(new java.awt.Color(255, 255, 255));
+        lblBarcosCon.setText("0");
 
         pap.setLayout(new java.awt.GridLayout(7, 7, 4, 4));
 
@@ -491,8 +491,8 @@ public class JuegoNaval extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 255, 204));
 
-        monte.setBackground(new java.awt.Color(0, 255, 204));
-        monte.setForeground(new java.awt.Color(0, 204, 204));
+        lblmonte.setBackground(new java.awt.Color(0, 255, 204));
+        lblmonte.setForeground(new java.awt.Color(0, 204, 204));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -500,14 +500,14 @@ public class JuegoNaval extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(monte, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                .addComponent(lblmonte, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(monte, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
+                .addComponent(lblmonte, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -526,8 +526,8 @@ public class JuegoNaval extends javax.swing.JFrame {
                                 .addGap(33, 33, 33)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(MisilesCon, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BarcosCon, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(lblMisilesCon, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblBarcosCon, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -556,11 +556,11 @@ public class JuegoNaval extends javax.swing.JFrame {
                         .addGap(38, 38, 38)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblmisiles)
-                    .addComponent(MisilesCon))
+                    .addComponent(lblMisilesCon))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblBarcosDerrivados)
-                    .addComponent(BarcosCon))
+                    .addComponent(lblBarcosCon))
                 .addContainerGap())
         );
 
@@ -570,214 +570,214 @@ public class JuegoNaval extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn00ActionPerformed
-        Chupon_tavo(btn00);
+        MecanicaJuego(btn00);
     }//GEN-LAST:event_btn00ActionPerformed
 
     private void btn01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn01ActionPerformed
-        Chupon_tavo(btn01);
+        MecanicaJuego(btn01);
     }//GEN-LAST:event_btn01ActionPerformed
 
     private void btn02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn02ActionPerformed
-        Chupon_tavo(btn02);
+        MecanicaJuego(btn02);
     }//GEN-LAST:event_btn02ActionPerformed
 
     private void btn03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn03ActionPerformed
-        Chupon_tavo(btn03);
+        MecanicaJuego(btn03);
     }//GEN-LAST:event_btn03ActionPerformed
 
     private void btn04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn04ActionPerformed
-        Chupon_tavo(btn04);
+        MecanicaJuego(btn04);
     }//GEN-LAST:event_btn04ActionPerformed
 
     private void btn05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn05ActionPerformed
-        Chupon_tavo(btn05);
+        MecanicaJuego(btn05);
     }//GEN-LAST:event_btn05ActionPerformed
 
     private void btn06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn06ActionPerformed
-        Chupon_tavo(btn06);
+        MecanicaJuego(btn06);
     }//GEN-LAST:event_btn06ActionPerformed
 
     private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
-        Chupon_tavo(btn10);
+        MecanicaJuego(btn10);
     }//GEN-LAST:event_btn10ActionPerformed
 
     private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
-        Chupon_tavo(btn11);
+        MecanicaJuego(btn11);
     }//GEN-LAST:event_btn11ActionPerformed
 
     private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
-        Chupon_tavo(btn12);
+        MecanicaJuego(btn12);
     }//GEN-LAST:event_btn12ActionPerformed
 
     private void btn13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn13ActionPerformed
-        Chupon_tavo(btn13);
+        MecanicaJuego(btn13);
     }//GEN-LAST:event_btn13ActionPerformed
 
     private void btn14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn14ActionPerformed
-        Chupon_tavo(btn14);
+        MecanicaJuego(btn14);
     }//GEN-LAST:event_btn14ActionPerformed
 
     private void btn15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn15ActionPerformed
-        Chupon_tavo(btn15);
+        MecanicaJuego(btn15);
     }//GEN-LAST:event_btn15ActionPerformed
 
     private void btn16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn16ActionPerformed
-        Chupon_tavo(btn16);
+        MecanicaJuego(btn16);
     }//GEN-LAST:event_btn16ActionPerformed
 
     private void btn20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn20ActionPerformed
-        Chupon_tavo(btn20);
+        MecanicaJuego(btn20);
     }//GEN-LAST:event_btn20ActionPerformed
 
     private void btn21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn21ActionPerformed
-        Chupon_tavo(btn21);
+        MecanicaJuego(btn21);
     }//GEN-LAST:event_btn21ActionPerformed
 
     private void btn22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn22ActionPerformed
-        Chupon_tavo(btn22);
+        MecanicaJuego(btn22);
     }//GEN-LAST:event_btn22ActionPerformed
 
     private void btn23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn23ActionPerformed
-        Chupon_tavo(btn23);
+        MecanicaJuego(btn23);
     }//GEN-LAST:event_btn23ActionPerformed
 
     private void btn24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn24ActionPerformed
-        Chupon_tavo(btn24);
+        MecanicaJuego(btn24);
     }//GEN-LAST:event_btn24ActionPerformed
 
     private void btn25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn25ActionPerformed
-        Chupon_tavo(btn25);
+        MecanicaJuego(btn25);
     }//GEN-LAST:event_btn25ActionPerformed
 
     private void btn26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn26ActionPerformed
-        Chupon_tavo(btn26);
+        MecanicaJuego(btn26);
     }//GEN-LAST:event_btn26ActionPerformed
 
     private void btn30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn30ActionPerformed
-        Chupon_tavo(btn30);
+        MecanicaJuego(btn30);
     }//GEN-LAST:event_btn30ActionPerformed
 
     private void btn31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn31ActionPerformed
-        Chupon_tavo(btn31);
+        MecanicaJuego(btn31);
     }//GEN-LAST:event_btn31ActionPerformed
 
     private void btn32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn32ActionPerformed
-        Chupon_tavo(btn32);
+        MecanicaJuego(btn32);
     }//GEN-LAST:event_btn32ActionPerformed
 
     private void btn33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn33ActionPerformed
-        Chupon_tavo(btn33);
+        MecanicaJuego(btn33);
     }//GEN-LAST:event_btn33ActionPerformed
 
     private void btn34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn34ActionPerformed
-        Chupon_tavo(btn34);
+        MecanicaJuego(btn34);
     }//GEN-LAST:event_btn34ActionPerformed
 
     private void btn35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn35ActionPerformed
-        Chupon_tavo(btn35);
+        MecanicaJuego(btn35);
     }//GEN-LAST:event_btn35ActionPerformed
 
     private void btn36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn36ActionPerformed
-        Chupon_tavo(btn36);
+        MecanicaJuego(btn36);
     }//GEN-LAST:event_btn36ActionPerformed
 
     private void btn40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn40ActionPerformed
-        Chupon_tavo(btn40);
+        MecanicaJuego(btn40);
     }//GEN-LAST:event_btn40ActionPerformed
 
     private void btn41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn41ActionPerformed
-        Chupon_tavo(btn41);
+        MecanicaJuego(btn41);
     }//GEN-LAST:event_btn41ActionPerformed
 
     private void btn42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn42ActionPerformed
-        Chupon_tavo(btn42);
+        MecanicaJuego(btn42);
     }//GEN-LAST:event_btn42ActionPerformed
 
     private void btn43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn43ActionPerformed
-        Chupon_tavo(btn43);
+        MecanicaJuego(btn43);
     }//GEN-LAST:event_btn43ActionPerformed
 
     private void btn44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn44ActionPerformed
-        Chupon_tavo(btn44);
+        MecanicaJuego(btn44);
     }//GEN-LAST:event_btn44ActionPerformed
 
     private void btn45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn45ActionPerformed
-        Chupon_tavo(btn45);
+        MecanicaJuego(btn45);
     }//GEN-LAST:event_btn45ActionPerformed
 
     private void btn46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn46ActionPerformed
-        Chupon_tavo(btn46);
+        MecanicaJuego(btn46);
     }//GEN-LAST:event_btn46ActionPerformed
 
     private void btn50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn50ActionPerformed
-        Chupon_tavo(btn50);
+        MecanicaJuego(btn50);
     }//GEN-LAST:event_btn50ActionPerformed
 
     private void btn51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn51ActionPerformed
-        Chupon_tavo(btn51);
+        MecanicaJuego(btn51);
     }//GEN-LAST:event_btn51ActionPerformed
 
     private void btn52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn52ActionPerformed
-        Chupon_tavo(btn52);
+        MecanicaJuego(btn52);
     }//GEN-LAST:event_btn52ActionPerformed
 
     private void btn53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn53ActionPerformed
-        Chupon_tavo(btn53);
+        MecanicaJuego(btn53);
     }//GEN-LAST:event_btn53ActionPerformed
 
     private void btn54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn54ActionPerformed
-        Chupon_tavo(btn54);
+        MecanicaJuego(btn54);
     }//GEN-LAST:event_btn54ActionPerformed
 
     private void btn55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn55ActionPerformed
-        Chupon_tavo(btn55);
+        MecanicaJuego(btn55);
     }//GEN-LAST:event_btn55ActionPerformed
 
     private void btn56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn56ActionPerformed
-        Chupon_tavo(btn56);
+        MecanicaJuego(btn56);
     }//GEN-LAST:event_btn56ActionPerformed
 
     private void btn60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn60ActionPerformed
-        Chupon_tavo(btn60);
+        MecanicaJuego(btn60);
     }//GEN-LAST:event_btn60ActionPerformed
 
     private void btn61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn61ActionPerformed
-        Chupon_tavo(btn61);
+        MecanicaJuego(btn61);
     }//GEN-LAST:event_btn61ActionPerformed
 
     private void btn62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn62ActionPerformed
-        Chupon_tavo(btn62);
+        MecanicaJuego(btn62);
     }//GEN-LAST:event_btn62ActionPerformed
 
     private void btn63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn63ActionPerformed
-        Chupon_tavo(btn63);
+        MecanicaJuego(btn63);
     }//GEN-LAST:event_btn63ActionPerformed
 
     private void btn64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn64ActionPerformed
-        Chupon_tavo(btn64);
+        MecanicaJuego(btn64);
     }//GEN-LAST:event_btn64ActionPerformed
 
     private void btn65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn65ActionPerformed
-        Chupon_tavo(btn65);
+        MecanicaJuego(btn65);
     }//GEN-LAST:event_btn65ActionPerformed
 
     private void btn66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn66ActionPerformed
-        Chupon_tavo(btn66);
+        MecanicaJuego(btn66);
     }//GEN-LAST:event_btn66ActionPerformed
 
     
-    public void Chupon_tavo(JButton btn){
+    public void MecanicaJuego (JButton btn){
         
         melado.ubicar();
         btn.setEnabled(false);
-        int tavogay=Integer.parseInt(MisilesCon.getText());
+        int tavogay=Integer.parseInt(lblMisilesCon.getText());
         
          tavogay=tavogay-1;
-         MisilesCon.setText(""+tavogay);
-         melado.con(BarcosCon,monte,btn);
+         lblMisilesCon.setText(""+tavogay);
+         melado.con(lblBarcosCon,lblmonte,btn);
          if(tavogay==30){
              JOptionPane.showMessageDialog(null, "FIN DEL JUGIO"
-                     + "\n hundiste "+BarcosCon.getText()+" barcos");
+                     + "\n hundiste "+lblBarcosCon.getText()+" barcos");
             System.exit(0);
          }
          
@@ -795,8 +795,8 @@ public class JuegoNaval extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BarcosCon;
-    private javax.swing.JLabel MisilesCon;
+    private javax.swing.JLabel lblBarcosCon;
+    private javax.swing.JLabel lblMisilesCon;
     private javax.swing.JButton btn00;
     private javax.swing.JButton btn01;
     private javax.swing.JButton btn02;
@@ -851,7 +851,7 @@ public class JuegoNaval extends javax.swing.JFrame {
     private javax.swing.JLabel lblBarcosDerrivados;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel monte;
+    private javax.swing.JLabel lblmonte;
     private javax.swing.JPanel pap;
     // End of variables declaration//GEN-END:variables
 }
