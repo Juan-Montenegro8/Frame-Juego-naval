@@ -21,7 +21,7 @@ public class ModeladoDelJuego {
         
         
     }
-    public void con(JLabel lblcontador,JLabel panel, JButton btnexplocion) {
+    public void contadorHundidos(JLabel lblcontador,JLabel panel, JButton btnexplocion) {
         if(batalla[0][0]=='s'){
             JOptionPane.showMessageDialog(null, "BARCO HUNDIDO");
             int contador =Integer.parseInt(lblcontador.getText());

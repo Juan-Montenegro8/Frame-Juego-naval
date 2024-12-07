@@ -4,10 +4,10 @@ import javax.swing.JButton;
 import javax.swing.JOptionPane;
 public class JuegoNaval extends javax.swing.JFrame {
 
-    ModeladoDelJuego melado;
+    ModeladoDelJuego modelado;
     public JuegoNaval() {
         initComponents();
-        melado = new ModeladoDelJuego();
+        modelado = new ModeladoDelJuego();
     }
 
     @SuppressWarnings("unchecked")
@@ -19,7 +19,7 @@ public class JuegoNaval extends javax.swing.JFrame {
         lblmisiles = new javax.swing.JLabel();
         lblMisilesCon = new javax.swing.JLabel();
         lblBarcosDerrivados = new javax.swing.JLabel();
-        lblBarcosCon = new javax.swing.JLabel();
+        lblbarcocontador = new javax.swing.JLabel();
         pap = new javax.swing.JPanel();
         btn00 = new javax.swing.JButton();
         btn01 = new javax.swing.JButton();
@@ -71,7 +71,7 @@ public class JuegoNaval extends javax.swing.JFrame {
         btn65 = new javax.swing.JButton();
         btn66 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        lblmonte = new javax.swing.JLabel();
+        lblbarcoHundido = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
@@ -91,8 +91,8 @@ public class JuegoNaval extends javax.swing.JFrame {
         lblBarcosDerrivados.setForeground(new java.awt.Color(255, 255, 255));
         lblBarcosDerrivados.setText("barcos derrivados");
 
-        lblBarcosCon.setForeground(new java.awt.Color(255, 255, 255));
-        lblBarcosCon.setText("0");
+        lblbarcocontador.setForeground(new java.awt.Color(255, 255, 255));
+        lblbarcocontador.setText("0");
 
         pap.setLayout(new java.awt.GridLayout(7, 7, 4, 4));
 
@@ -491,8 +491,8 @@ public class JuegoNaval extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 255, 204));
 
-        lblmonte.setBackground(new java.awt.Color(0, 255, 204));
-        lblmonte.setForeground(new java.awt.Color(0, 204, 204));
+        lblbarcoHundido.setBackground(new java.awt.Color(0, 255, 204));
+        lblbarcoHundido.setForeground(new java.awt.Color(0, 204, 204));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -500,14 +500,14 @@ public class JuegoNaval extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblmonte, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                .addComponent(lblbarcoHundido, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblmonte, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
+                .addComponent(lblbarcoHundido, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -527,7 +527,7 @@ public class JuegoNaval extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblMisilesCon, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblBarcosCon, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(lblbarcocontador, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -560,7 +560,7 @@ public class JuegoNaval extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblBarcosDerrivados)
-                    .addComponent(lblBarcosCon))
+                    .addComponent(lblbarcocontador))
                 .addContainerGap())
         );
 
@@ -766,18 +766,18 @@ public class JuegoNaval extends javax.swing.JFrame {
     }//GEN-LAST:event_btn66ActionPerformed
 
     
-    public void MecanicaJuego (JButton btn){
+    public void MecanicaJuego (JButton btnposicion){
         
-        melado.ubicar();
-        btn.setEnabled(false);
-        int tavogay=Integer.parseInt(lblMisilesCon.getText());
+        modelado.ubicar();
+        btnposicion.setEnabled(false);
+        int contadormisiles=Integer.parseInt(lblMisilesCon.getText());
         
-         tavogay=tavogay-1;
-         lblMisilesCon.setText(""+tavogay);
-         melado.con(lblBarcosCon,lblmonte,btn);
-         if(tavogay==30){
+        contadormisiles=-1;
+         lblMisilesCon.setText(""+contadormisiles);
+         modelado.contadorHundidos(lblbarcocontador,lblbarcoHundido,btnposicion);
+         if(contadormisiles==30){
              JOptionPane.showMessageDialog(null, "FIN DEL JUGIO"
-                     + "\n hundiste "+lblBarcosCon.getText()+" barcos");
+                     + "\n hundiste "+lblbarcocontador.getText()+" barcos");
             System.exit(0);
          }
          
@@ -795,7 +795,7 @@ public class JuegoNaval extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel lblBarcosCon;
+    private javax.swing.JLabel lblbarcocontador;
     private javax.swing.JLabel lblMisilesCon;
     private javax.swing.JButton btn00;
     private javax.swing.JButton btn01;
@@ -851,7 +851,7 @@ public class JuegoNaval extends javax.swing.JFrame {
     private javax.swing.JLabel lblBarcosDerrivados;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel lblmonte;
+    private javax.swing.JLabel lblbarcoHundido;
     private javax.swing.JPanel pap;
     // End of variables declaration//GEN-END:variables
 }
