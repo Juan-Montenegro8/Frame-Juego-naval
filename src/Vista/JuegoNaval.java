@@ -1,7 +1,9 @@
 package Vista;
 import Modelo.ModeladoDelJuego;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 public class JuegoNaval extends javax.swing.JFrame {
 
     ModeladoDelJuego modelado;
@@ -9,6 +11,8 @@ public class JuegoNaval extends javax.swing.JFrame {
         initComponents();
         modelado = new ModeladoDelJuego();
     }
+
+    private JButton[][] botones = new JButton[7][7];
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -96,398 +100,55 @@ public class JuegoNaval extends javax.swing.JFrame {
 
         pap.setLayout(new java.awt.GridLayout(7, 7, 4, 4));
 
-        btn00.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn00.setText(" ");
-        btn00.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn00ActionPerformed(evt);
-            }
-        });
-        pap.add(btn00);
-
-        btn01.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn01.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn01ActionPerformed(evt);
-            }
-        });
-        pap.add(btn01);
-
-        btn02.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn02.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn02ActionPerformed(evt);
-            }
-        });
-        pap.add(btn02);
-
-        btn03.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn03.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn03ActionPerformed(evt);
-            }
-        });
-        pap.add(btn03);
-
-        btn04.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn04.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn04ActionPerformed(evt);
-            }
-        });
-        pap.add(btn04);
-
-        btn05.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn05.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn05ActionPerformed(evt);
-            }
-        });
-        pap.add(btn05);
-
-        btn06.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn06.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn06ActionPerformed(evt);
-            }
-        });
-        pap.add(btn06);
-
-        btn10.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn10ActionPerformed(evt);
-            }
-        });
-        pap.add(btn10);
-
-        btn11.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn11ActionPerformed(evt);
-            }
-        });
-        pap.add(btn11);
-
-        btn12.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn12ActionPerformed(evt);
-            }
-        });
-        pap.add(btn12);
-
-        btn13.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn13ActionPerformed(evt);
-            }
-        });
-        pap.add(btn13);
-
-        btn14.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn14ActionPerformed(evt);
-            }
-        });
-        pap.add(btn14);
-
-        btn15.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn15ActionPerformed(evt);
-            }
-        });
-        pap.add(btn15);
-
-        btn16.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn16ActionPerformed(evt);
-            }
-        });
-        pap.add(btn16);
-
-        btn20.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn20ActionPerformed(evt);
-            }
-        });
-        pap.add(btn20);
-
-        btn21.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn21ActionPerformed(evt);
-            }
-        });
-        pap.add(btn21);
-
-        btn22.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn22ActionPerformed(evt);
-            }
-        });
-        pap.add(btn22);
-
-        btn23.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn23ActionPerformed(evt);
-            }
-        });
-        pap.add(btn23);
-
-        btn24.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn24ActionPerformed(evt);
-            }
-        });
-        pap.add(btn24);
-
-        btn25.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn25ActionPerformed(evt);
-            }
-        });
-        pap.add(btn25);
-
-        btn26.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn26ActionPerformed(evt);
-            }
-        });
-        pap.add(btn26);
-
-        btn30.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn30ActionPerformed(evt);
-            }
-        });
-        pap.add(btn30);
-
-        btn31.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn31ActionPerformed(evt);
-            }
-        });
-        pap.add(btn31);
-
-        btn32.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn32ActionPerformed(evt);
-            }
-        });
-        pap.add(btn32);
-
-        btn33.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn33ActionPerformed(evt);
-            }
-        });
-        pap.add(btn33);
-
-        btn34.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn34ActionPerformed(evt);
-            }
-        });
-        pap.add(btn34);
-
-        btn35.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn35ActionPerformed(evt);
-            }
-        });
-        pap.add(btn35);
-
-        btn36.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn36ActionPerformed(evt);
-            }
-        });
-        pap.add(btn36);
-
-        btn40.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn40.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn40ActionPerformed(evt);
-            }
-        });
-        pap.add(btn40);
-
-        btn41.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn41.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn41ActionPerformed(evt);
-            }
-        });
-        pap.add(btn41);
-
-        btn42.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn42.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn42ActionPerformed(evt);
-            }
-        });
-        pap.add(btn42);
-
-        btn43.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn43.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn43ActionPerformed(evt);
-            }
-        });
-        pap.add(btn43);
-
-        btn44.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn44ActionPerformed(evt);
-            }
-        });
-        pap.add(btn44);
-
-        btn45.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn45.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn45ActionPerformed(evt);
-            }
-        });
-        pap.add(btn45);
-
-        btn46.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn46.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn46ActionPerformed(evt);
-            }
-        });
-        pap.add(btn46);
-
-        btn50.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn50ActionPerformed(evt);
-            }
-        });
-        pap.add(btn50);
-
-        btn51.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn51ActionPerformed(evt);
-            }
-        });
-        pap.add(btn51);
-
-        btn52.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn52ActionPerformed(evt);
-            }
-        });
-        pap.add(btn52);
-
-        btn53.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn53.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn53ActionPerformed(evt);
-            }
-        });
-        pap.add(btn53);
-
-        btn54.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn54.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn54ActionPerformed(evt);
-            }
-        });
-        pap.add(btn54);
-
-        btn55.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn55.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn55ActionPerformed(evt);
-            }
-        });
-        pap.add(btn55);
-
-        btn56.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn56.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn56ActionPerformed(evt);
-            }
-        });
-        pap.add(btn56);
-
-        btn60.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn60.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn60ActionPerformed(evt);
-            }
-        });
-        pap.add(btn60);
-
-        btn61.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn61.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn61ActionPerformed(evt);
-            }
-        });
-        pap.add(btn61);
-
-        btn62.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn62.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn62ActionPerformed(evt);
-            }
-        });
-        pap.add(btn62);
-
-        btn63.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn63.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn63ActionPerformed(evt);
-            }
-        });
-        pap.add(btn63);
-
-        btn64.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn64.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn64ActionPerformed(evt);
-            }
-        });
-        pap.add(btn64);
-
-        btn65.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn65.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn65ActionPerformed(evt);
-            }
-        });
-        pap.add(btn65);
-
-        btn66.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // NOI18N
-        btn66.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn66ActionPerformed(evt);
-            }
-        });
-        pap.add(btn66);
+        configurarboton(btn00, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn01, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn02, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn03, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn04, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn05, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn06, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn10, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn11, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn12, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn13, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn14, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn15, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn16, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn20, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn21, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn22, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn23, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn24, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn25, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn26, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn30, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn31, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn32, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn33, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn34, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn35, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn36, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn40, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn41, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn42, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn43, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn44, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn45, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn46, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn50, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn51, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn52, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn53, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn54, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn55, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn56, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn60, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn61, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn62, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn63, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn64, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn65, " ", evt -> btn00ActionPerformed(evt), pap);
+        configurarboton(btn66, " ", evt -> btn00ActionPerformed(evt), pap);
 
         jPanel2.setBackground(new java.awt.Color(0, 255, 204));
 
@@ -783,7 +444,12 @@ public class JuegoNaval extends javax.swing.JFrame {
          
     }
     
-    
+    public void configurarboton(JButton boton, String texto, ActionListener action, JPanel contenedor){
+        boton.setFont(new java.awt.Font("Tw Cen MT", 1, 36)); // Configura la fuente
+        boton.setText(texto); // Configura el texto del botón
+        boton.addActionListener(action); // Asocia la acción
+        contenedor.add(boton); 
+    }
     
     public static void main(String args[]) {
 
