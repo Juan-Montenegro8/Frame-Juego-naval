@@ -10,6 +10,7 @@ public class JuegoNaval extends javax.swing.JFrame {
     public JuegoNaval() {
         initComponents();
         modelado = new ModeladoDelJuego();
+        modelado.ubicar();
     }
 
     private JButton[][] botones = new JButton[7][7];
@@ -231,216 +232,215 @@ public class JuegoNaval extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn00ActionPerformed
-        MecanicaJuego(btn00);
+        MecanicaJuego(btn00,0,0);
     }//GEN-LAST:event_btn00ActionPerformed
 
     private void btn01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn01ActionPerformed
-        MecanicaJuego(btn01);
+        MecanicaJuego(btn01,0,1);
     }//GEN-LAST:event_btn01ActionPerformed
 
     private void btn02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn02ActionPerformed
-        MecanicaJuego(btn02);
+        MecanicaJuego(btn02,0,2);
     }//GEN-LAST:event_btn02ActionPerformed
 
     private void btn03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn03ActionPerformed
-        MecanicaJuego(btn03);
+        MecanicaJuego(btn03,0,3);
     }//GEN-LAST:event_btn03ActionPerformed
 
     private void btn04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn04ActionPerformed
-        MecanicaJuego(btn04);
+        MecanicaJuego(btn04,0,4);
     }//GEN-LAST:event_btn04ActionPerformed
 
     private void btn05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn05ActionPerformed
-        MecanicaJuego(btn05);
+        MecanicaJuego(btn05,0,5);
     }//GEN-LAST:event_btn05ActionPerformed
 
     private void btn06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn06ActionPerformed
-        MecanicaJuego(btn06);
+        MecanicaJuego(btn06,0,6);
     }//GEN-LAST:event_btn06ActionPerformed
 
     private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
-        MecanicaJuego(btn10);
+        MecanicaJuego(btn10,1,0);
     }//GEN-LAST:event_btn10ActionPerformed
 
     private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
-        MecanicaJuego(btn11);
+        MecanicaJuego(btn11,1,1);
     }//GEN-LAST:event_btn11ActionPerformed
 
     private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
-        MecanicaJuego(btn12);
+        MecanicaJuego(btn12,1,2);
     }//GEN-LAST:event_btn12ActionPerformed
 
     private void btn13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn13ActionPerformed
-        MecanicaJuego(btn13);
+        MecanicaJuego(btn13,1,3);
     }//GEN-LAST:event_btn13ActionPerformed
 
     private void btn14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn14ActionPerformed
-        MecanicaJuego(btn14);
+        MecanicaJuego(btn14,1,4);
     }//GEN-LAST:event_btn14ActionPerformed
 
     private void btn15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn15ActionPerformed
-        MecanicaJuego(btn15);
+        MecanicaJuego(btn15,1,5);
     }//GEN-LAST:event_btn15ActionPerformed
 
     private void btn16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn16ActionPerformed
-        MecanicaJuego(btn16);
+        MecanicaJuego(btn16,1,6);
     }//GEN-LAST:event_btn16ActionPerformed
 
     private void btn20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn20ActionPerformed
-        MecanicaJuego(btn20);
+        MecanicaJuego(btn20,2,0);
     }//GEN-LAST:event_btn20ActionPerformed
 
     private void btn21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn21ActionPerformed
-        MecanicaJuego(btn21);
+        MecanicaJuego(btn21,2,1);
     }//GEN-LAST:event_btn21ActionPerformed
 
     private void btn22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn22ActionPerformed
-        MecanicaJuego(btn22);
+        MecanicaJuego(btn22,2,2);
     }//GEN-LAST:event_btn22ActionPerformed
 
     private void btn23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn23ActionPerformed
-        MecanicaJuego(btn23);
+        MecanicaJuego(btn23,2,3);
     }//GEN-LAST:event_btn23ActionPerformed
 
     private void btn24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn24ActionPerformed
-        MecanicaJuego(btn24);
+        MecanicaJuego(btn24,2,4);
     }//GEN-LAST:event_btn24ActionPerformed
 
     private void btn25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn25ActionPerformed
-        MecanicaJuego(btn25);
+        MecanicaJuego(btn25,2,5);
     }//GEN-LAST:event_btn25ActionPerformed
 
     private void btn26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn26ActionPerformed
-        MecanicaJuego(btn26);
+        MecanicaJuego(btn26,2,6);
     }//GEN-LAST:event_btn26ActionPerformed
 
     private void btn30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn30ActionPerformed
-        MecanicaJuego(btn30);
+        MecanicaJuego(btn30,3,0);
     }//GEN-LAST:event_btn30ActionPerformed
 
     private void btn31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn31ActionPerformed
-        MecanicaJuego(btn31);
+        MecanicaJuego(btn31,3,1);
     }//GEN-LAST:event_btn31ActionPerformed
 
     private void btn32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn32ActionPerformed
-        MecanicaJuego(btn32);
+        MecanicaJuego(btn32,3,2);
     }//GEN-LAST:event_btn32ActionPerformed
 
     private void btn33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn33ActionPerformed
-        MecanicaJuego(btn33);
+        MecanicaJuego(btn33,3,3);
     }//GEN-LAST:event_btn33ActionPerformed
 
     private void btn34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn34ActionPerformed
-        MecanicaJuego(btn34);
+        MecanicaJuego(btn34,3,4);
     }//GEN-LAST:event_btn34ActionPerformed
 
     private void btn35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn35ActionPerformed
-        MecanicaJuego(btn35);
+        MecanicaJuego(btn35,3,5);
     }//GEN-LAST:event_btn35ActionPerformed
 
     private void btn36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn36ActionPerformed
-        MecanicaJuego(btn36);
+        MecanicaJuego(btn36,3,6);
     }//GEN-LAST:event_btn36ActionPerformed
 
     private void btn40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn40ActionPerformed
-        MecanicaJuego(btn40);
+        MecanicaJuego(btn40,4,0);
     }//GEN-LAST:event_btn40ActionPerformed
 
     private void btn41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn41ActionPerformed
-        MecanicaJuego(btn41);
+        MecanicaJuego(btn41,4,1);
     }//GEN-LAST:event_btn41ActionPerformed
 
     private void btn42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn42ActionPerformed
-        MecanicaJuego(btn42);
+        MecanicaJuego(btn42,4,2);
     }//GEN-LAST:event_btn42ActionPerformed
 
     private void btn43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn43ActionPerformed
-        MecanicaJuego(btn43);
+        MecanicaJuego(btn43,4,3);
     }//GEN-LAST:event_btn43ActionPerformed
 
     private void btn44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn44ActionPerformed
-        MecanicaJuego(btn44);
+        MecanicaJuego(btn44,4,4);
     }//GEN-LAST:event_btn44ActionPerformed
 
     private void btn45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn45ActionPerformed
-        MecanicaJuego(btn45);
+        MecanicaJuego(btn45,4,5);
     }//GEN-LAST:event_btn45ActionPerformed
 
     private void btn46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn46ActionPerformed
-        MecanicaJuego(btn46);
+        MecanicaJuego(btn46,4,6);
     }//GEN-LAST:event_btn46ActionPerformed
 
     private void btn50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn50ActionPerformed
-        MecanicaJuego(btn50);
+        MecanicaJuego(btn50,5,0);
     }//GEN-LAST:event_btn50ActionPerformed
 
     private void btn51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn51ActionPerformed
-        MecanicaJuego(btn51);
+        MecanicaJuego(btn51,5,1);
     }//GEN-LAST:event_btn51ActionPerformed
 
     private void btn52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn52ActionPerformed
-        MecanicaJuego(btn52);
+        MecanicaJuego(btn52,5,2);
     }//GEN-LAST:event_btn52ActionPerformed
 
     private void btn53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn53ActionPerformed
-        MecanicaJuego(btn53);
+        MecanicaJuego(btn53,5,3);
     }//GEN-LAST:event_btn53ActionPerformed
 
     private void btn54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn54ActionPerformed
-        MecanicaJuego(btn54);
+        MecanicaJuego(btn54,5,4);
     }//GEN-LAST:event_btn54ActionPerformed
 
     private void btn55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn55ActionPerformed
-        MecanicaJuego(btn55);
+        MecanicaJuego(btn55,5,5);
     }//GEN-LAST:event_btn55ActionPerformed
 
     private void btn56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn56ActionPerformed
-        MecanicaJuego(btn56);
+        MecanicaJuego(btn56,5,6);
     }//GEN-LAST:event_btn56ActionPerformed
 
     private void btn60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn60ActionPerformed
-        MecanicaJuego(btn60);
+        MecanicaJuego(btn60,6,0);
     }//GEN-LAST:event_btn60ActionPerformed
 
     private void btn61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn61ActionPerformed
-        MecanicaJuego(btn61);
+        MecanicaJuego(btn61,6,1);
     }//GEN-LAST:event_btn61ActionPerformed
 
     private void btn62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn62ActionPerformed
-        MecanicaJuego(btn62);
+        MecanicaJuego(btn62,6,2);
     }//GEN-LAST:event_btn62ActionPerformed
 
     private void btn63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn63ActionPerformed
-        MecanicaJuego(btn63);
+        MecanicaJuego(btn63,6,3);
     }//GEN-LAST:event_btn63ActionPerformed
 
     private void btn64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn64ActionPerformed
-        MecanicaJuego(btn64);
+        MecanicaJuego(btn64,6,4);
     }//GEN-LAST:event_btn64ActionPerformed
 
     private void btn65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn65ActionPerformed
-        MecanicaJuego(btn65);
+        MecanicaJuego(btn65,6,5);
     }//GEN-LAST:event_btn65ActionPerformed
 
     private void btn66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn66ActionPerformed
-        MecanicaJuego(btn66);
+        MecanicaJuego(btn66,6,6);
     }//GEN-LAST:event_btn66ActionPerformed
 
     
-    public void MecanicaJuego (JButton btnposicion){
+    public void MecanicaJuego (JButton btnposicion, int fila, int columna){
         
-        modelado.ubicar();
         btnposicion.setEnabled(false);
         int contadormisiles=Integer.parseInt(lblMisilesCon.getText());
         
-        contadormisiles=-1;
-         lblMisilesCon.setText(""+contadormisiles);
-         modelado.contadorHundidos(lblbarcocontador,lblbarcoHundido,btnposicion);
-         if(contadormisiles==30){
-             JOptionPane.showMessageDialog(null, "FIN DEL JUGIO"
-                     + "\n hundiste "+lblbarcocontador.getText()+" barcos");
+        contadormisiles--;
+        lblMisilesCon.setText(""+contadormisiles);
+        modelado.contadorHundidos(lblbarcocontador,lblbarcoHundido,btnposicion,fila,columna);
+        if(contadormisiles==30){
+            JOptionPane.showMessageDialog(null, "FIN DEL JUGIO"
+                    + "\n hundiste "+lblbarcocontador.getText()+" barcos");
             System.exit(0);
-         }
+        }
          
     }
     
