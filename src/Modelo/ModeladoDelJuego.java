@@ -16,19 +16,35 @@ public class ModeladoDelJuego {
      
     public void ubicar() {
         for (int i = 0; i < 7; i++) {
-            batalla[i][aleatorio.nextInt(7)]='s';
+            for (int j = 0; j < 7; j++) {
+                batalla[i][j] = 'n'; // 'n' indica que no hay barco
+            }
+        }
+    
+        // Ubica un barco en cada fila
+        for (int i = 0; i < 7; i++) {
+            int columna = aleatorio.nextInt(7);
+            while (batalla[i][columna] == 's') { // Evita duplicados
+                columna = aleatorio.nextInt(7);
+            }
+            batalla[i][columna] = 's'; // 's' indica un barco
         }
         
         
     }
-    public void contadorHundidos(JLabel lblcontador,JLabel panel, JButton btnexplocion) {
-        if(batalla[0][0]=='s'){
+    public void contadorHundidos(JLabel lblcontador,JLabel panel, JButton btnexplocion, int fila, int columna) {
+        if (batalla[fila][columna] == 's') {
             JOptionPane.showMessageDialog(null, "BARCO HUNDIDO");
-            int contador =Integer.parseInt(lblcontador.getText());
-            contador+=1;
-            lblcontador.setText(""+contador);
+            int contador = Integer.parseInt(lblcontador.getText());
+            contador ++;
+            lblcontador.setText("" + contador);
             btnexplocion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Modelo/Explosion.jpeg")));
             panel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Modelo/Mar.jpeg")));
+    
+            // Marca la posición como atacada para evitar hundir el mismo barco dos veces
+            batalla[fila][columna] = 'x'; // 'x' indica posición atacada
+        } else {
+            JOptionPane.showMessageDialog(null, "Agua. Sigue intentando.");
         }
     }
 
